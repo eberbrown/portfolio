@@ -21,7 +21,7 @@ const developerEl = document.querySelector(".developer");
 
 const aboutMeSectionEl = document.querySelector(".about-me");
 
-const aboutMeTextEl = document.querySelector(".about-me-text");
+const aboutMeSectionElementsEl = document.querySelector(".about-me-section-elements");
 const aboutMeButtonEl = document.querySelector(".about-me button");
 const workSectionEl = document.querySelector(".work");
 
@@ -69,14 +69,50 @@ const techListTwo = document.querySelector(".ulTwo");
 
 window.addEventListener("scroll", function () {
   const scrollFromTop = window.pageYOffset;
+  const windowWidth = window.innerWidth;
 
   function sectionInheritStyle(el) {
     el.style.backgroundColor = "inherit";
     el.style.color = "inherit";
-    el.style.opacity = 1;
+    /* el.style.opacity = 1; */
   }
 
-  if (scrollFromTop <= frontEndEl.offsetTop) {
+  if (windowWidth < 480) {
+    if (scrollFromTop <= (frontEndEl.offsetTop-300)) {
+      sectionInheritStyle(introSectionEl);
+      sectionInheritStyle(aboutMeSectionEl);
+      sectionInheritStyle(workSectionEl);
+      aboutMeSectionElementsEl.style.opacity = 0;
+    } else if (scrollFromTop <= (aboutMeButtonEl.offsetTop)) {
+      introSectionEl.style.backgroundColor = "#0e0e0e";
+      aboutMeSectionEl.style.backgroundColor = "#0e0e0e";
+      aboutMeSectionEl.style.color = "#e5e5e5";
+      workSectionEl.style.backgroundColor = "#0e0e0e";
+      aboutMeSectionElementsEl.style.opacity = 1;
+    } else {
+      sectionInheritStyle(introSectionEl);
+      sectionInheritStyle(aboutMeSectionEl);
+      sectionInheritStyle(workSectionEl);
+      aboutMeSectionElementsEl.style.opacity = 0;
+    }
+  } else {
+    if (scrollFromTop <= frontEndEl.offsetTop) {
+      sectionInheritStyle(introSectionEl);
+      sectionInheritStyle(aboutMeSectionEl);
+      sectionInheritStyle(workSectionEl);
+    } else if (scrollFromTop <= aboutMeButtonEl.offsetTop) {
+      introSectionEl.style.backgroundColor = "#0e0e0e";
+      aboutMeSectionEl.style.backgroundColor = "#0e0e0e";
+      aboutMeSectionEl.style.color = "#e5e5e5";
+      workSectionEl.style.backgroundColor = "#0e0e0e";
+    } else {
+      sectionInheritStyle(introSectionEl);
+      sectionInheritStyle(aboutMeSectionEl);
+      sectionInheritStyle(workSectionEl);
+    }
+  }
+
+  /* if (scrollFromTop <= frontEndEl.offsetTop) {
     sectionInheritStyle(introSectionEl);
     sectionInheritStyle(aboutMeSectionEl);
     sectionInheritStyle(workSectionEl);
@@ -89,7 +125,8 @@ window.addEventListener("scroll", function () {
     sectionInheritStyle(introSectionEl);
     sectionInheritStyle(aboutMeSectionEl);
     sectionInheritStyle(workSectionEl);
-  }
+  } */
+
 });
 
 industrialElAnimation(industrialEl);

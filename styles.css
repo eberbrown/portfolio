@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  /* -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    transition: 1s ease-in-out; */
 }
 
 h1,
@@ -20,7 +16,25 @@ body {
   margin: 0;
   background-color: #e5e5e5;
   color: #0e0e0e;
-  /* cursor: none; */
+}
+
+.apply-border {
+  border: 1px solid;
+}
+
+.apply-border-red {
+  border: 1px solid red;
+}
+
+.apply-border-green {
+  border: 1px solid green;
+}
+
+.apply-transition-OneS {
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 /* ------------------------- NavBar Section -------------------------- */
@@ -49,7 +63,6 @@ nav {
 
 .info-div-nav p {
   line-height: 1.2;
-  /* font-size: 1.5rem; */
   font-size: 1.95vw;
   margin: 0;
 }
@@ -82,7 +95,6 @@ nav {
 
 .link-div-nav p {
   line-height: 1.5;
-  /* font-size: 1rem; */
   font-size: 1.3vw;
   margin: 0;
 }
@@ -117,17 +129,11 @@ nav {
 .intro {
   width: 100vw;
   height: 100vh;
-  /* padding: 0 70px 20px 70px; */
   padding: 0 6vw 20px 6vw;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  /* border: 1px solid; */
 }
 
 .intro-divs {
@@ -151,11 +157,9 @@ nav {
 
 .intro-text {
   margin: 0;
-  /* font-size: 6.1rem; */
   font-size: 7.8vw;
   font-weight: 500;
   line-height: 1;
-  /* border: 1px solid; */
 }
 
 .intro-divs span {
@@ -163,12 +167,10 @@ nav {
 }
 
 .f-end .intro-text {
-   /* font-size: 6.8rem; */
   font-size: 8.8vw;
 }
 
 .dev .intro-text {
-  /* font-size: 6.8rem; */
   font-size: 8.8vw;
 }
 
@@ -191,31 +193,22 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 0 10% 0px 10%; */
   padding: 0 10vw 0px 10vw;
   margin: 0;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  /* border: 1px solid; */
   border: none;
 }
 
 .about-me h2 {
   width: 80vw;
-  /* font-size: 6.1rem; */
   font-size: 7.9vw;
   line-height: 1;
   margin: 0;
   margin-bottom: 15px;
   font-weight: 500;
   align-self: start;
-  /* border: 1px solid; */
 }
 
 .about-me-text {
-  /* font-size: 2rem; */
   font-size: 2.58vw;
 }
 
@@ -235,7 +228,7 @@ nav {
   overflow: hidden; /* Hide the element content, while height = 0 */
   height: 0;
   opacity: 0;
-  transition: height 0ms 0.5s, opacity 1s 0ms;
+  /* transition: height 0ms 0.5s, opacity 1s 0ms; */
 }
 
 .img-cursor.visible {
@@ -247,10 +240,8 @@ button {
   background-color: #e5e5e5;
   color: #0e0e0e;
   font-family: inherit;
-  /* font-size: 1.6rem; */
   font-size: 2.05vw;
   padding: 15px 55px;
-  /* text-transform: uppercase; */
   border: 2px solid #0e0e0e;
   border-radius: 10px;
   margin-top: 30px;
@@ -259,28 +250,19 @@ button {
 
 button:hover {
   background-color: #d6ae5d;
-  
 }
 
 /* ------------------------- Work Section -------------------------- */
 
 .work {
   min-height: 110vh;
-  /* padding: 70px; */
   padding: 11vh 6vw;
   margin: 0;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  /* border: 1px solid; */
   border: none;
 }
 
 .work h2 {
-  /* font-size: 6.1rem; */
   font-size: 7.9vw;
-  /* line-height: 0; */
 }
 
 .work-samples {
@@ -331,7 +313,6 @@ button:hover {
 
 .work-sample-cards {
   width: 50%;
-  /* border: 1px solid green; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,10 +326,6 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
 }
 
 .work-card-img {
@@ -367,10 +344,7 @@ button:hover {
 
 .tech {
   min-height: 30vh;
-  /* border: 1px solid; */
-  /* padding: 70px 0; */
   padding: 11vh 0;
-  /* margin: 30px 0; */
   margin: 3.5vh 0;
 }
 
@@ -399,12 +373,10 @@ button:hover {
   color: #991a10;
 }
 
-
 /* ------------------------- Contact Section -------------------------- */
 
 .contact {
   min-height: auto;
-  /* border: 1px solid; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -412,11 +384,8 @@ button:hover {
 
 .contact-container {
   width: 80%;
-  /* margin: 50px 0 180px 0; */
   margin: 7.7vh 0 22vh 0;
-  /* padding: 80px 0; */
   padding: 12vh 0;
-  /* border: 1px solid; */
   background-color: #0e0e0e;
   color: #e5e5e5;
   display: flex;
@@ -427,16 +396,12 @@ button:hover {
 }
 
 .contact-container h1 {
-  /* font-size: 6.1rem; */
   font-size: 7.9vw;
   line-height: 1;
   margin: 0 0 40px 0;
-  /* text-transform: uppercase; */
-
 }
 
 .contact-container h3 {
-  /* font-size: 1.6rem; */
   font-size: 2.05vw;
   font-weight: 400;
   line-height: 1;
@@ -446,37 +411,87 @@ button:hover {
 /* ------------------------- Media Queries -------------------------- */
 
 @media screen and (max-width: 320px) {
-  
 }
 @media screen and (max-width: 480px) {
-  .about-me {
-    min-height: 90vh;
-    padding: 0 10vw 0px 10vw;
-    margin: 0;
+  .intro {
+    height: 90vh;
   }
+
+  .intro-text {
+    font-size: 9.5vw;
+  }
+  
+  .f-end .intro-text, .dev .intro-text {
+    font-size: 10vw;
+  }
+
+  .about-me {
+    min-height: 80vh;
+  }
+
+  .about-me h2 {
+    font-size: 12vw;
+  }
+
+  .about-me-text {
+    font-size: 4vw;
+  }
+
+  .img-cursor {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    border-radius: 20px;
+    overflow: hidden; /* Hide the element content, while height = 0 */
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 0.5s, opacity 1s 0ms;
+  }
+
+  button {
+    background-color: #d6ae5d;
+    font-size: 3.8vw;
+    border: 2px solid #d6ae5d;
+  }
+
   .work {
     min-height: 90vh;
     padding: 0vh 6vw;
   }
+
   .work h2 {
     margin-top: 0;
   }
+
   .work-sample-cards {
     display: none;
   }
+
   .work-list-container {
     width: 100%;
   }
+
   .tech {
-    padding: 0;
-    margin: 0;
+    padding: 2vh 0 5vh 0 ;
+    margin: 3.5vh 0;
   }
+
   .tech ul li {
     font-size: 3rem;
   }
+
   .contact-container {
-    margin: 7.7vh 0 10vh 0;
-    padding: 8vh 0;
+    margin: 3vh 0 10vh 0;
+    padding: 6vh 0;
+    width: 90%;
+  }
+  
+  .contact-container h1 {
+    font-size: 10vw;
+  }
+  
+  .contact-container h3 {
+    font-size: 4vw;
   }
 }
 @media screen and (max-width: 600px) {
